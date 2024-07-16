@@ -1,4 +1,4 @@
-package Operadores;
+package operadores;
 
 public class IncrementoYDecremento {
     public static void main(String[] args) {
