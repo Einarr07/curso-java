@@ -1,3 +1,4 @@
+/*Pedir 10 sueldos. Mostrar su suma y cuantos sueldos son mayores a 1000*/
 package ciclos.ejercicios;
 
 import javax.swing.*;
