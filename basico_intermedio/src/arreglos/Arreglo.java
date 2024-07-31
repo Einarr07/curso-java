@@ -4,6 +4,10 @@
 * programa.*/
 package arreglos;
 
+import javax.swing.*;
+import java.awt.*;
+import java.util.Scanner;
+
 public class Arreglo {
     public static void main(String[] args) {
         // Forma número 1
@@ -26,6 +30,29 @@ public class Arreglo {
 
         for(int j = 0; j < 4; j++){
             System.out.println(numeros2[j]);
+        }
+
+        // Llenar un arreglo
+        System.out.println("-------------------");
+        System.out.println("|Llenar un arreglo|");
+        System.out.println("-------------------");
+        Scanner entrada = new Scanner(System.in);
+        int nElementos;
+
+        nElementos = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese la cantidad de" +
+                "elementos que estaran dentro del arreglo"));
+
+        char[] letras = new char[nElementos];
+
+        System.out.println("Ingrese los elementos del arreglo: ");
+        for (int i = 0; i <nElementos; i++){
+            System.out.print((i+1)+". Ingrese un caracter: ");
+            letras[i] = entrada.next().charAt(0);
+        }
+
+        System.out.println("\nLos caracteres del arreglo son: ");
+        for (int i = 0; i < nElementos; i++){
+            System.out.println(letras[i]+ " ");
         }
     }
 }
